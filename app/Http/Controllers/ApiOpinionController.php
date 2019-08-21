@@ -4,9 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Opinion;
+
+
 class ApiOpinionController extends Controller
 {
+    
     public function create(Request $request){
+        header("Access-Control-Allow-Origin: *");
         $calificacion= new Opinion();
         $calificacion->id_sucursal= $request->input('id_sucursal');
 

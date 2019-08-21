@@ -18,6 +18,30 @@ class TablaPlatoSeeder extends Seeder
             'estado'=>1
            
         ]);
+
+                 //inicializamos Faker en modo Español
+      $faker = Faker\Factory::create('es_ES');
+
+      for($a = 0; $a < 2; $a++) {
+
+         //Aquí obtenemos la imagen aleatoria 640x480
+         $img = file_get_contents($faker->imageUrl('640', '480'));
+         $username =  $faker->userName;
+         $fileName = str_random(5).'-'.$username.'.jpg';         
+
+         //creamos el user guardando el nombre de la imágen.
+         $user = User::create(array(
+            'first_name' => $faker->firstname,
+            'last_name' => $faker->lastname,            
+            'avatar' => $fileName,
+         ));
+
+         //Y la guardamos en el servidor.
+         file_put_contents("public/images/avatares/$fileName", $img);
+      }
+
+
+
         DB::table('platos')->insert([
             'nombre' => 'plato 2',
             'descripcion' => 'Descripción plato 2',
