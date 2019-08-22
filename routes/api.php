@@ -20,3 +20,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::get('/opinion','ApiOpinionController@create');
 
 Route::get('/sucursal','ApiSucursalController@show');
+
+Route::get('/plato','PlatoController@create');
