@@ -20,4 +20,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::get('/opinion','ApiOpinionController@create');
 
 Route::get('/sucursal','ApiSucursalController@show');
+Route::get('/sucursal-menu/{id}','ApiSucursalMenuController@show');
+Route::get('/sucursal-negocio','ApiSucursalNegocioController@show');
+
+
 
