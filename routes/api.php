@@ -21,4 +21,3 @@ Route::get('/opinion','ApiOpinionController@create');
 
 Route::get('/sucursal','ApiSucursalController@show');
 
-Route::get('/plato','PlatoController@create');
