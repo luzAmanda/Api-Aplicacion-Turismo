@@ -13,7 +13,7 @@ class TablaSucursalSeeder extends Seeder
     {
         DB::table('sucursales')->insert([
             'id_negocio' => 1,
-            'nombre'=>'nombre del negico 1',
+            'nombre'=>'nombre del negocio 1',
             'celular'=> '0987654322',
             'telefono'=>'teléfono 1',
             'direccion'=>'dirección 1',
@@ -23,7 +23,7 @@ class TablaSucursalSeeder extends Seeder
         ]);
         DB::table('sucursales')->insert([
             'id_negocio' => 2,
-            'nombre'=>'nombre del negico 2',
+            'nombre'=>'nombre del negocio 2',
             'celular'=> '098787654',
             'telefono'=>'2345656565',
             'direccion'=>'dirección 2',
@@ -33,7 +33,7 @@ class TablaSucursalSeeder extends Seeder
         ]);
         DB::table('sucursales')->insert([
             'id_negocio' => 3,
-            'nombre'=>'nombre del negico 3',
+            'nombre'=>'nombre del negocio 3',
             'celular'=> '0987656567',
             'telefono'=>'0987878765',
             'direccion'=>'dirección 3',
@@ -43,7 +43,7 @@ class TablaSucursalSeeder extends Seeder
         ]);
         DB::table('sucursales')->insert([
             'id_negocio' => 4,
-            'nombre'=>'nombre del negico 4',
+            'nombre'=>'nombre del negocio 4',
             'celular'=> '0987878765',
             'telefono'=>'0987878765',
             'direccion'=>'dirección 4',
@@ -53,7 +53,7 @@ class TablaSucursalSeeder extends Seeder
         ]);
         DB::table('sucursales')->insert([
             'id_negocio' => 5,
-            'nombre'=>'nombre del negico 5',
+            'nombre'=>'nombre del negocio 5',
             'celular'=> '0987878765',
             'telefono'=>'0987878765',
             'direccion'=>'dirección 5',
@@ -63,7 +63,7 @@ class TablaSucursalSeeder extends Seeder
         ]);
         DB::table('sucursales')->insert([
             'id_negocio' => 6,
-            'nombre'=>'nombre del negico 6',
+            'nombre'=>'nombre del negocio 6',
             'celular'=> '0987878765',
             'telefono'=>'0987878765',
             'direccion'=>'dirección 6',

@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Sucursal extends Model
 {
  
-
+    protected $hidden = ['img'];
 
     protected $table= 'sucursales';
     protected $primaryKey = 'id_sucursal';
@@ -33,4 +33,5 @@ class Sucursal extends Model
     public function Combo(){
     return $this->belongsToMany('App\Combo','menus','id_sucursal','id_combo');
     }
+    
 }
