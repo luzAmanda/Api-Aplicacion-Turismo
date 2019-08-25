@@ -24,4 +24,4 @@ Route::get('/sucursal-menu/{id}','ApiSucursalMenuController@show');
 Route::get('/sucursal-negocio','ApiSucursalNegocioController@show');
 
 
-Route::get('/plato','PlatoController@create');
+
