@@ -14,6 +14,3 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::get('/plato', 'PlatoController@create');
-Route::post('/plato', 'PlatoController@store');
