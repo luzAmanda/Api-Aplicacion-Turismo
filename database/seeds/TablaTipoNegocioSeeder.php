@@ -1,5 +1,6 @@
 <?php
 
+
 use Illuminate\Database\Seeder;
 
 class TablaTipoNegocioSeeder extends Seeder
@@ -11,23 +12,21 @@ class TablaTipoNegocioSeeder extends Seeder
      */
     public function run()
     {
-    //  $tipo_negocio=[
-     //     'Restaurante',
-       //   'Hotel',
-         // 'Farmacia',
-         // 'Librería'
-     // ];
-     // foreach($tipo_negocio as $key=>$value){
-       //   DB::table('tipo_negocio')->insert([
-           //   'nombre'=>$value,
-         //     'descripcion' =>'descripción'
-         // ]);
-
-     // }
-     
-     DB::table('tipo_negocio')->insert([
-        'nombre' => 'Restaurante',
-        'descripcion' => 'Descripción del restautante',
-    ]);
+        DB::table('tipo_negocio')->insert([
+            'nombre' => 'Restaurante',
+            'icono' => 'ios-restaurant', 
+        ]);
+        DB::table('tipo_negocio')->insert([
+            'nombre' => 'cafetería',
+            'icono' => 'ios-cafe', 
+        ]);
+        DB::table('tipo_negocio')->insert([
+            'nombre' => 'Bar',
+            'icono' => 'ios-beer', 
+        ]);
+        DB::table('tipo_negocio')->insert([
+            'nombre' => 'Hotel',
+            'icono' => 'ios-calculator', 
+        ]);
     }
 }

@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateSucursalProductoTable extends Migration {
+class CreateSucursalDetalleTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,11 +12,11 @@ class CreateSucursalProductoTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('sucursal_producto', function(Blueprint $table)
+		Schema::create('sucursal_detalle', function(Blueprint $table)
 		{
-			$table->integer('id_sucursalproducto', true);
+			$table->integer('id_sucursaldetalle', true);
 			$table->integer('id_sucursal')->nullable();
-			$table->integer('id_producto')->nullable();
+			$table->integer('id_detalle')->nullable();
 		});
 	}
 
@@ -28,7 +28,7 @@ class CreateSucursalProductoTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('sucursal_producto');
+		Schema::drop('sucursal_detalle');
 	}
 
 }

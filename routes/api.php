@@ -23,8 +23,8 @@ Route::middleware('auth:api')->group( function () {
 
 });
 
-Route::get('/opinion','ApiOpinionController@create');
 
+Route::get('/opinion','ApiOpinionController@create');
 Route::get('/sucursal','ApiSucursalController@show');
 Route::get('/sucursal-menu/{id}','ApiSucursalMenuController@show');
 Route::get('/sucursal-negocio','ApiSucursalNegocioController@show');
