@@ -14,7 +14,7 @@ class AddForeignKeysToOpinionesTable extends Migration {
 	{
 		Schema::table('opiniones', function(Blueprint $table)
 		{
-			$table->foreign('id_sucursal', 'fk_califica_reference_sucursal')->references('id_sucursal')->on('sucursales')->onUpdate('RESTRICT')->onDelete('RESTRICT');
+			$table->foreign('id_sucursal', 'fk_opinione_reference_sucursal')->references('id_sucursal')->on('sucursales')->onUpdate('RESTRICT')->onDelete('RESTRICT');
 		});
 	}
 
@@ -28,7 +28,7 @@ class AddForeignKeysToOpinionesTable extends Migration {
 	{
 		Schema::table('opiniones', function(Blueprint $table)
 		{
-			$table->dropForeign('fk_califica_reference_sucursal');
+			$table->dropForeign('fk_opinione_reference_sucursal');
 		});
 	}
 

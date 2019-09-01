@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreatePlatosTable extends Migration {
+class CreatePromocionesTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,14 +12,13 @@ class CreatePlatosTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('platos', function(Blueprint $table)
+		Schema::create('promociones', function(Blueprint $table)
 		{
-			$table->integer('id_plato', true);
+			$table->integer('id_promocion')->primary('pk_promociones');
+			$table->integer('id_sucursal')->nullable();
 			$table->string('nombre', 100);
-			$table->text('descripcion')->nullable();
-			$table->float('precio', 10, 0)->nullable();
+			$table->text('descripcion');
 			$table->text('foto')->nullable();
-			$table->text('tipo_foto')->nullable();
 			$table->integer('estado');
 		});
 	}
@@ -32,7 +31,7 @@ class CreatePlatosTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('platos');
+		Schema::drop('promociones');
 	}
 
 }

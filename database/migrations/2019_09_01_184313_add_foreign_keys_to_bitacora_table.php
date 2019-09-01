@@ -14,7 +14,7 @@ class AddForeignKeysToBitacoraTable extends Migration {
 	{
 		Schema::table('bitacora', function(Blueprint $table)
 		{
-			$table->foreign('id_usuario', 'fk_bitacora_reference_users')->references('id_usuario')->on('users')->onUpdate('RESTRICT')->onDelete('RESTRICT');
+			$table->foreign('id_usuario', 'fk_bitacora_reference_usuarios')->references('id_usuario')->on('usuarios_cli')->onUpdate('RESTRICT')->onDelete('RESTRICT');
 		});
 	}
 
@@ -28,7 +28,7 @@ class AddForeignKeysToBitacoraTable extends Migration {
 	{
 		Schema::table('bitacora', function(Blueprint $table)
 		{
-			$table->dropForeign('fk_bitacora_reference_users');
+			$table->dropForeign('fk_bitacora_reference_usuarios');
 		});
 	}
 

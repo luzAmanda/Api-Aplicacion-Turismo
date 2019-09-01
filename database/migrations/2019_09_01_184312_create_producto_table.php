@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateCombosTable extends Migration {
+class CreateProductoTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,14 +12,15 @@ class CreateCombosTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('combos', function(Blueprint $table)
+		Schema::create('producto', function(Blueprint $table)
 		{
-			$table->integer('id_combo', true);
+			$table->integer('id_producto', true);
+			$table->integer('id_categoria')->nullable();
 			$table->string('nombre', 100);
 			$table->text('descripcion')->nullable();
-			$table->text('foto')->nullable();
-			$table->float('precio', 10, 0);
+			$table->text('foto');
 			$table->text('tipo_foto')->nullable();
+			$table->float('precio', 10, 0)->nullable();
 			$table->integer('estado');
 		});
 	}
@@ -32,7 +33,7 @@ class CreateCombosTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('combos');
+		Schema::drop('producto');
 	}
 
 }

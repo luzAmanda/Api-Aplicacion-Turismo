@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateTipoNegocioTable extends Migration {
+class CreatePasswordResetsTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,11 +12,11 @@ class CreateTipoNegocioTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('tipo_negocio', function(Blueprint $table)
+		Schema::create('password_resets', function(Blueprint $table)
 		{
-			$table->integer('id_tipo_negocio', true);
-			$table->string('nombre', 100);
-			$table->text('descripcion')->nullable();
+			$table->string('email')->index();
+			$table->string('token');
+			$table->dateTime('created_at')->nullable();
 		});
 	}
 
@@ -28,7 +28,7 @@ class CreateTipoNegocioTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('tipo_negocio');
+		Schema::drop('password_resets');
 	}
 
 }

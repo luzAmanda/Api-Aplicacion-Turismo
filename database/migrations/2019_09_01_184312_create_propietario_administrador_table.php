@@ -14,7 +14,7 @@ class CreatePropietarioAdministradorTable extends Migration {
 	{
 		Schema::create('propietario_administrador', function(Blueprint $table)
 		{
-			$table->integer('id_propietario_administrador', true);
+			$table->integer('id_propietarioadministrador', true);
 			$table->integer('id_administrador')->nullable();
 			$table->integer('id_propietario')->nullable();
 		});

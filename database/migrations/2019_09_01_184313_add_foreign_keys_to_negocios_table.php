@@ -14,7 +14,7 @@ class AddForeignKeysToNegociosTable extends Migration {
 	{
 		Schema::table('negocios', function(Blueprint $table)
 		{
-			$table->foreign('id_tipo_negocio', 'fk_negocios_reference_tipo_neg')->references('id_tipo_negocio')->on('tipo_negocio')->onUpdate('RESTRICT')->onDelete('RESTRICT');
+			$table->foreign('id_tiponegocio', 'fk_negocios_reference_tipo_neg')->references('id_tiponegocio')->on('tipo_negocio')->onUpdate('RESTRICT')->onDelete('RESTRICT');
 		});
 	}
 

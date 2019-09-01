@@ -16,13 +16,15 @@ class CreateSucursalesTable extends Migration {
 		{
 			$table->integer('id_sucursal', true);
 			$table->integer('id_negocio');
-			$table->string('nombre', 100)->unique('sucursales_nombre_key');
+			$table->string('nombre', 100);
 			$table->string('celular', 15);
 			$table->string('telefono', 10)->nullable();
 			$table->text('direccion');
 			$table->float('longitud', 10, 0);
 			$table->float('latitud', 10, 0);
 			$table->integer('estado');
+			$table->text('foto')->nullable();
+			$table->text('tipo_foto')->nullable();
 		});
 	}
 
