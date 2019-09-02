@@ -16,8 +16,10 @@ class DatabaseSeeder extends Seeder
         //]);
         $this->call(TablaTipoNegocioSeeder::class);
         $this->call(TablaNegocioSeeder::class);
-       
+        
         $this->call(TablaSucursalSeeder::class);
+        $this->call(TablaOpinionSeeder::class);
+        $this->call(TablaPromocionSeeder::class);
         $this->call(TablaCategoriaSeeder::class);
         $this->call(TablaDetalleSeeder::class);
         $this->call(TablaSucursalDetalleSeeder::class);

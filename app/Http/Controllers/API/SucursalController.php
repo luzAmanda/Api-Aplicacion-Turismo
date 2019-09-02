@@ -18,7 +18,7 @@ class SucursalController extends BaseController
     public function show($id)
     {
          header("Access-Control-Allow-Origin: *");
-        $Suc=Sucursal::with(['negocio','detalle_sucursal','opinion','promocion'])->find($id);
+        $Suc=Sucursal::with(['negocio','opinion','promocion'])->find($id);
        // $SucDet=Detalle::with(['sucursalDetalle','categoria'])->where('id_sucursal',$id);
      //  $SucDet = DB::table('detalles')->join('sucursal_detalle', 'sucursal_detalle.id_sucursal', '=',$id )->join('categorias', 'detalles.id_categoria', '=', 'categorias.id_categoria')->select('detalles.*', 'categorias.*')->get();
     //   DB::table('sucursal_detalle')->join('sucursales', 'sucursal.id_sucursal', '=', 'sucursal_detalle.id_sucursal')->join('detalles', 'detalles.id_detalle', '=', 'sucursal_detalle.id_detalle')->select('detalles.id_categoria');

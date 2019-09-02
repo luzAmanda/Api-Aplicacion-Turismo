@@ -20,6 +20,7 @@ class CreatePromocionesTable extends Migration {
 			$table->text('descripcion');
 			$table->text('foto')->nullable();
 			$table->integer('estado');
+			$table->text('tipo_foto')->nullable();
 		});
 	}
 
