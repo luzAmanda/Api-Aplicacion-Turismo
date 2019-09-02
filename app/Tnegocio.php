@@ -14,4 +14,8 @@ class Tnegocio extends Model
         'nombre', 'icono'
 
     ];
+    public function negocios(){
+        return $this->hasMany('App\Negocio','id_tiponegocio');   
+    }
+
 }

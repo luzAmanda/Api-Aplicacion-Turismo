@@ -14,7 +14,7 @@ class CreatePromocionesTable extends Migration {
 	{
 		Schema::create('promociones', function(Blueprint $table)
 		{
-			$table->integer('id_promocion')->primary('pk_promociones');
+			$table->integer('id_promocion')->primary('promociones_pkey');
 			$table->integer('id_sucursal')->nullable();
 			$table->string('nombre', 100);
 			$table->text('descripcion');

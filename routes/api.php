@@ -17,11 +17,16 @@ Route::post('register', 'API\RegisterController@register');
 
   
 
-Route::middleware('auth:api')->group( function () {
+//Route::middleware('auth:api')->group( function () {
 
-	Route::resource('TiposNegocio', 'API\TnegocioController');
+    Route::get('tiposNegocio', 'API\TnegocioController@index1');
+    Route::get('negocios', 'API\TnegocioController@index2');
+    Route::get('sucursal/{id}', 'API\TnegocioController@show');
+    Route::get('categorias', 'API\TnegocioController@index');
+    
 
-});
+
+//});
 
 
 Route::get('/opinion','ApiOpinionController@create');

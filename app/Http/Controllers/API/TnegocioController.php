@@ -10,19 +10,21 @@ use Validator;
 
 class TnegocioController extends BaseController
 {
-    public function index()
+    public function index1()
 
     {
 
         $tNegocio = Tnegocio::all();
-
-
-
         return $this->sendResponse($tNegocio->toArray(), 'Tipos de negocios retrieved successfully.');
-
     }
+    public function index2()
 
+    {
 
+        $Negocios=Tnegocio::with('negocios')->get();
+        return $this->sendResponse($Negocios->toArray(), 'Tipos de negocios retrieved successfully.');
+    }
+ 
 
     /**
 
@@ -85,7 +87,6 @@ class TnegocioController extends BaseController
      */
 
     public function show($id)
-
     {
 
         $tNegocio = Tnegocio::find($id);
