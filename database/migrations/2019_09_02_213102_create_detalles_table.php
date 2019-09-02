@@ -16,7 +16,7 @@ class CreateDetallesTable extends Migration {
 		{
 			$table->integer('id_detalle', true);
 			$table->integer('id_categoria')->nullable();
-			$table->string('nombre', 100);
+			$table->string('nombreDetalle', 100);
 			$table->text('descripcion')->nullable();
 			$table->text('foto');
 			$table->text('tipo_foto')->nullable();

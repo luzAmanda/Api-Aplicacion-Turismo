@@ -15,7 +15,7 @@ class SucursalDetalle extends Model
     public function detalles(){
         return $this->hasMany('App\Detalle','id_detalle');
     }
-    public function categorias(){
+  /*  public function categorias(){
         return $this->hasOneThrough(
         'App\Categoria',
         'App\Detalle',
@@ -24,5 +24,5 @@ class SucursalDetalle extends Model
         'id_categoria',
         'id_detalle'
     );
-}
+}*/
 }

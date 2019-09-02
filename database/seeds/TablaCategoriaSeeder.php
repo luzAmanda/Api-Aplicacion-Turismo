@@ -13,49 +13,49 @@ class TablaCategoriaSeeder extends Seeder
     {
         //restaurante
         DB::table('categorias')->insert([
-            'nombre' => 'Platos',
+            'nombreCategoria' => 'Platos',
             'icono' => 'ios-restaurant', 
         ]);
         DB::table('categorias')->insert([
-            'nombre' => 'Postres',
+            'nombreCategoria' => 'Postres',
             'icono' => 'ios-cream', 
         ]);
         DB::table('categorias')->insert([
-            'nombre' => 'Desyunos',
+            'nombreCategoria' => 'Desyunos',
             'icono' => 'ios-beer', 
         ]);
         DB::table('categorias')->insert([
-            'nombre' => 'Bebidas',
+            'nombreCategoria' => 'Bebidas',
             'icono' => 'ios-calculator', 
         ]);
 
         // CAFETERIA
         DB::table('categorias')->insert([
-            'nombre' => 'Cafés',
+            'nombreCategoria' => 'Cafés',
             'icono' => 'ios-cafe', 
         ]);
         DB::table('categorias')->insert([
-            'nombre' => 'Sanduches',
+            'nombreCategoria' => 'Sanduches',
             'icono' => 'ios-cafe', 
         ]);
         DB::table('categorias')->insert([
-            'nombre' => 'Frappés',
+            'nombreCategoria' => 'Frappés',
             'icono' => 'ios-beer', 
         ]);
         DB::table('categorias')->insert([
-            'nombre' => 'Smoothies',
+            'nombreCategoria' => 'Smoothies',
             'icono' => 'ios-beer', 
         ]);
         DB::table('categorias')->insert([
-            'nombre' => 'Malteadas',
+            'nombreCategoria' => 'Malteadas',
             'icono' => 'ios-beer', 
         ]);
         DB::table('categorias')->insert([
-            'nombre' => 'Tés',
+            'nombreCategoria' => 'Tés',
             'icono' => 'ios-cafe', 
         ]);
         DB::table('categorias')->insert([
-            'nombre' => 'Postres',
+            'nombreCategoria' => 'Postres',
             'icono' => 'ios-cream', 
         ]);
      

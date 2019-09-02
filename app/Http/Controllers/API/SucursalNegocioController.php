@@ -5,7 +5,7 @@ namespace App\Http\Controllers\API;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class SucursalNegocioController extends Controller
+class SucursalNegocioController extends BaseController
 {
     /**
      * Display a listing of the resource.

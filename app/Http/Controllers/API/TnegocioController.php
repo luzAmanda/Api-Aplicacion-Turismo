@@ -24,6 +24,8 @@ class TnegocioController extends BaseController
         $Negocios=Tnegocio::with('negocios')->get();
         return $this->sendResponse($Negocios->toArray(), 'Tipos de negocios retrieved successfully.');
     }
+
+    
  
 
     /**
@@ -85,8 +87,23 @@ class TnegocioController extends BaseController
      * @return \Illuminate\Http\Response
 
      */
-
     public function show($id)
+    {
+
+        $tNegocio = Tnegocio::with('negocios')->find($id);
+
+
+
+        if (is_null($tNegocio)) {
+
+            return $this->sendError('Negocios por tipo de negocio not found.');
+
+        }
+        return $this->sendResponse($tNegocio->toArray(), 'Negocio por Tipo de negocio retrieved successfully.');
+    }
+
+
+    public function show1($id)
     {
 
         $tNegocio = Tnegocio::find($id);

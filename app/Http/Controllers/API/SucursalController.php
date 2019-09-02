@@ -3,14 +3,14 @@
 namespace App\Http\Controllers\Api;
 
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
+use App\Http\Controllers\API\BaseController as BaseController;
 use App\Negocio;
 use App\Detalle;
-use App\Opinion;
+use App\Sucursal;
 use App\Promocion;
 use App\SucursalDetalle;
 
-class SucursalController extends Controller
+class SucursalController extends BaseController
 {
    
     

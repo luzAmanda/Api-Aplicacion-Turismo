@@ -13,9 +13,10 @@ class Detalle extends Model
     public function categoria(){
         return $this->hasMany('App\Categoria','id_categoria');
     } 
-   public function sucursalDetalle(){
-      return $this->hasToMany('App\SucursalDetalle','id_detalle');   
+   public function sucursalesDetalles(){
+      return $this->hasMany('App\SucursalDetalle','id_detalle');   
 }
+
    
 
 }
