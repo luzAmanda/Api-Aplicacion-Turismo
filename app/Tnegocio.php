@@ -17,5 +17,15 @@ class Tnegocio extends Model
     public function negocios(){
         return $this->hasMany('App\Negocio','id_tiponegocio');   
     }
+    public function sucursales(){
+        return $this->hasManyThrough(
+        'App\Sucursal',
+        'App\Negocio',
+        'id_tiponegocio',
+        'id_negocio',
+        'id_tiponegocio',
+        'id_negocio'
+    );
+    } 
 
 }
