@@ -10,7 +10,13 @@ class Negocio extends Model
     protected $primaryKey = 'id_negocio';
     protected $filable =['id_tipo_negocio','nombre','descripcion'];
 
-    public function sucursal(){
+   /* public function sucursal(){
         return $this->belongsTo('App\Sucursal','id_negocio');   
+    }*/
+    public function sucursal(){
+        return $this->hasMany('App\Sucursal','id_negocio');   
+    }
+    public function tipoNegocio(){
+        return $this->hasOne('App\Tnegocio','id_negocio');   
     }
 }

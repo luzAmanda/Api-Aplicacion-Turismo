@@ -89,9 +89,9 @@ class TnegocioController extends BaseController
      */
     public function show($id)
     {
-
-        $tNegocio = Tnegocio::with('negocios')->find($id);
-
+        header("Access-Control-Allow-Origin: *");
+    //    $tNegocio = Tnegocio::with('negocios')->find($id);
+        $tNegocio = Tnegocio::with('sucursales')->find($id);
 
 
         if (is_null($tNegocio)) {
@@ -105,7 +105,7 @@ class TnegocioController extends BaseController
 
     public function show1($id)
     {
-
+        header("Access-Control-Allow-Origin: *");
         $tNegocio = Tnegocio::find($id);
 
 
