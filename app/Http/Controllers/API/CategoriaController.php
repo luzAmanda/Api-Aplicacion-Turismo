@@ -10,6 +10,7 @@ class CategoriaController extends Controller
     
     public function index()
     {
+      header("Access-Control-Allow-Origin: *");
   $categorias=  Categoria::with('detalle','detallesSucursales')->get();
 
     return $this->sendResponse($categorias->toArray(), 'Categorias retrieved successfully.');
