@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class AddForeignKeysToSucursalDetalleTable extends Migration {
+class AddForeignKeysToSucursalCategoriaTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,10 +12,10 @@ class AddForeignKeysToSucursalDetalleTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::table('sucursal_detalle', function(Blueprint $table)
+		Schema::table('sucursal_categoria', function(Blueprint $table)
 		{
+			$table->foreign('id_categoria', 'fk_sucursal_reference_categori')->references('id_categoria')->on('categorias')->onUpdate('RESTRICT')->onDelete('RESTRICT');
 			$table->foreign('id_sucursal', 'fk_sucursal_reference_sucursal')->references('id_sucursal')->on('sucursales')->onUpdate('RESTRICT')->onDelete('RESTRICT');
-			$table->foreign('id_detalle', 'fk_sucursal_reference_detalle')->references('id_detalle')->on('detalles')->onUpdate('RESTRICT')->onDelete('RESTRICT');
 		});
 	}
 
@@ -27,10 +27,10 @@ class AddForeignKeysToSucursalDetalleTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::table('sucursal_detalle', function(Blueprint $table)
+		Schema::table('sucursal_categoria', function(Blueprint $table)
 		{
+			$table->dropForeign('fk_sucursal_reference_categori');
 			$table->dropForeign('fk_sucursal_reference_sucursal');
-			$table->dropForeign('fk_sucursal_reference_detalle');
 		});
 	}
 

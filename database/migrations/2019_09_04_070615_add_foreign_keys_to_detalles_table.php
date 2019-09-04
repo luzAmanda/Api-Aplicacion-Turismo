@@ -14,7 +14,7 @@ class AddForeignKeysToDetallesTable extends Migration {
 	{
 		Schema::table('detalles', function(Blueprint $table)
 		{
-			$table->foreign('id_categoria', 'fk_detalle_reference_categoria')->references('id_categoria')->on('categorias')->onUpdate('RESTRICT')->onDelete('RESTRICT');
+			$table->foreign('id_sucursalcategoria', 'fk_detalles_reference_sucursal')->references('id_sucursalcategoria')->on('sucursal_categoria')->onUpdate('RESTRICT')->onDelete('RESTRICT');
 		});
 	}
 
@@ -28,7 +28,7 @@ class AddForeignKeysToDetallesTable extends Migration {
 	{
 		Schema::table('detalles', function(Blueprint $table)
 		{
-			$table->dropForeign('fk_detalle_reference_categoria');
+			$table->dropForeign('fk_detalles_reference_sucursal');
 		});
 	}
 
