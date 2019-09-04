@@ -14,19 +14,19 @@ class TablaTipoNegocioSeeder extends Seeder
     {
         DB::table('tipo_negocio')->insert([
             'nombre' => 'Restaurante',
-            'icono' => 'ios-restaurant', 
+            'icono' => 'restaurant', 
         ]);
         DB::table('tipo_negocio')->insert([
             'nombre' => 'cafetería',
-            'icono' => 'ios-cafe', 
+            'icono' => 'cafe', 
         ]);
         DB::table('tipo_negocio')->insert([
             'nombre' => 'Bar',
-            'icono' => 'ios-beer', 
+            'icono' => 'beer', 
         ]);
         DB::table('tipo_negocio')->insert([
             'nombre' => 'Hotel',
-            'icono' => 'ios-calculator', 
+            'icono' => 'calculator', 
         ]);
     }
 }
