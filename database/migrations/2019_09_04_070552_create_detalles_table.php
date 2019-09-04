@@ -15,8 +15,8 @@ class CreateDetallesTable extends Migration {
 		Schema::create('detalles', function(Blueprint $table)
 		{
 			$table->integer('id_detalle', true);
-			$table->integer('id_categoria')->nullable();
-			$table->string('nombreDetalle', 100);
+			$table->integer('id_sucursalcategoria')->nullable();
+			$table->string('nombre', 100);
 			$table->text('descripcion')->nullable();
 			$table->text('foto');
 			$table->text('tipo_foto')->nullable();

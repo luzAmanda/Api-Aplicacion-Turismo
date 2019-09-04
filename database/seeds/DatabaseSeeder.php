@@ -21,8 +21,9 @@ class DatabaseSeeder extends Seeder
         $this->call(TablaOpinionSeeder::class);
         $this->call(TablaPromocionSeeder::class);
         $this->call(TablaCategoriaSeeder::class);
+      
+        $this->call(TablaSucursalCategoriaSeeder::class);
         $this->call(TablaDetalleSeeder::class);
-        $this->call(TablaSucursalDetalleSeeder::class);
         
         
        

@@ -20,6 +20,8 @@ class CreateOpinionesTable extends Migration {
 			$table->text('opinion');
 			$table->integer('calificacion');
 			$table->timestamps();
+			$table->text('foto')->nullable();
+			$table->text('tipo_foto')->nullable();
 		});
 	}
 

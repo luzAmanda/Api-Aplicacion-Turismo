@@ -14,12 +14,12 @@ class CreatePromocionesTable extends Migration {
 	{
 		Schema::create('promociones', function(Blueprint $table)
 		{
-			$table->integer('id_promocion')->primary('promociones_pkey');
+			$table->integer('id_promocion')->primary('pk_promociones');
 			$table->integer('id_sucursal')->nullable();
 			$table->string('nombre', 100);
 			$table->text('descripcion');
-			$table->text('foto')->nullable();
 			$table->integer('estado');
+			$table->text('foto')->nullable();
 			$table->text('tipo_foto')->nullable();
 		});
 	}

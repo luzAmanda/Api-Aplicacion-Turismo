@@ -13,49 +13,60 @@ class TablaCategoriaSeeder extends Seeder
     {
         //restaurante
         DB::table('categorias')->insert([
-            'nombreCategoria' => 'Platos',
+         
+            'nombre' => 'Platos',
             'icono' => 'ios-restaurant', 
         ]);
         DB::table('categorias')->insert([
-            'nombreCategoria' => 'Postres',
+         
+            'nombre' => 'Postres',
             'icono' => 'ios-cream', 
         ]);
         DB::table('categorias')->insert([
-            'nombreCategoria' => 'Desyunos',
+          
+            'nombre' => 'Desyunos',
             'icono' => 'ios-beer', 
         ]);
         DB::table('categorias')->insert([
-            'nombreCategoria' => 'Bebidas',
+            
+            'nombre' => 'Bebidas',
             'icono' => 'ios-calculator', 
         ]);
 
         // CAFETERIA
         DB::table('categorias')->insert([
-            'nombreCategoria' => 'Cafés',
+         
+            'nombre' => 'Cafés',
             'icono' => 'ios-cafe', 
         ]);
         DB::table('categorias')->insert([
-            'nombreCategoria' => 'Sanduches',
+           
+            'nombre' => 'Sanduches',
             'icono' => 'ios-cafe', 
         ]);
         DB::table('categorias')->insert([
-            'nombreCategoria' => 'Frappés',
+           
+            'nombre' => 'Frappés',
             'icono' => 'ios-beer', 
         ]);
         DB::table('categorias')->insert([
-            'nombreCategoria' => 'Smoothies',
+           
+            'nombre' => 'Smoothies',
             'icono' => 'ios-beer', 
         ]);
         DB::table('categorias')->insert([
-            'nombreCategoria' => 'Malteadas',
+           
+            'nombre' => 'Malteadas',
             'icono' => 'ios-beer', 
         ]);
         DB::table('categorias')->insert([
-            'nombreCategoria' => 'Tés',
+          
+            'nombre' => 'Tés',
             'icono' => 'ios-cafe', 
         ]);
         DB::table('categorias')->insert([
-            'nombreCategoria' => 'Postres',
+          
+            'nombre' => 'Postres',
             'icono' => 'ios-cream', 
         ]);
      
