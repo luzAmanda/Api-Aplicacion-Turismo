@@ -22,6 +22,6 @@ class SucursalDetalleController extends BaseController
    $sucursales= Sucursal::find($id);
 
 
-   return $this->sendResponse([$categorias,$sucursales], 'id Sucursal(categorias) retrieved successfully.');
+   return $this->sendResponse([$sucursales,$categorias], 'id Sucursal(categorias) retrieved successfully.');
 }
 }
