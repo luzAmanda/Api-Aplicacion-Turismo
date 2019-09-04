@@ -8,6 +8,7 @@ use App\Detalle;
 use DB;
 use App\SucursalDetalle;
 use App\Sucursal;
+use App\Categoria;
 
 class SucursalDetalleController extends BaseController
 {
