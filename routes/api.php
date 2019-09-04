@@ -24,7 +24,7 @@ Route::post('register', 'API\RegisterController@register');
     Route::get('negociosPorTipo/{id}', 'API\TnegocioController@show');
     Route::get('sucursalporId/{id}', 'API\SucursalController@show');
     Route::get('categorias', 'API\TnegocioController@index');
-    Route::get('sucursal-detalle/{id}', 'API\SucursalDetalleController@show');
+    Route::get('sucursal-categorias/{id}', 'API\SucursalDetalleController@show');
     
 
 
