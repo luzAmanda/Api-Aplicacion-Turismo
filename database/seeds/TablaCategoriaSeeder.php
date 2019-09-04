@@ -15,59 +15,59 @@ class TablaCategoriaSeeder extends Seeder
         DB::table('categorias')->insert([
          
             'nombre' => 'Platos',
-            'icono' => 'ios-restaurant', 
+            'icono' => 'restaurant', 
         ]);
         DB::table('categorias')->insert([
          
             'nombre' => 'Postres',
-            'icono' => 'ios-cream', 
+            'icono' => 'cream', 
         ]);
         DB::table('categorias')->insert([
           
             'nombre' => 'Desyunos',
-            'icono' => 'ios-beer', 
+            'icono' => 'beer', 
         ]);
         DB::table('categorias')->insert([
             
             'nombre' => 'Bebidas',
-            'icono' => 'ios-calculator', 
+            'icono' => 'calculator', 
         ]);
 
         // CAFETERIA
         DB::table('categorias')->insert([
          
             'nombre' => 'Cafés',
-            'icono' => 'ios-cafe', 
+            'icono' => 'cafe', 
         ]);
         DB::table('categorias')->insert([
            
             'nombre' => 'Sanduches',
-            'icono' => 'ios-cafe', 
+            'icono' => 'cafe', 
         ]);
         DB::table('categorias')->insert([
            
             'nombre' => 'Frappés',
-            'icono' => 'ios-beer', 
+            'icono' => 'beer', 
         ]);
         DB::table('categorias')->insert([
            
             'nombre' => 'Smoothies',
-            'icono' => 'ios-beer', 
+            'icono' => 'beer', 
         ]);
         DB::table('categorias')->insert([
            
             'nombre' => 'Malteadas',
-            'icono' => 'ios-beer', 
+            'icono' => 'beer', 
         ]);
         DB::table('categorias')->insert([
           
             'nombre' => 'Tés',
-            'icono' => 'ios-cafe', 
+            'icono' => 'cafe', 
         ]);
         DB::table('categorias')->insert([
           
             'nombre' => 'Postres',
-            'icono' => 'ios-cream', 
+            'icono' => 'cream', 
         ]);
      
     }
