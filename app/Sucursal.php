@@ -28,15 +28,19 @@ class Sucursal extends Model
           return $this->belongsToMany('App\Detalle','sucursal_detalle','id_sucursal','id_sucursaldetalle');
         }
 
-        public function categorias()
+        public function categorias(){
+            return $this->belongsToMany('App\Categoria','sucursal_categoria','id_sucursal','id_sucursalcategoria');
+          }
+
+        public function categorias2()
     {
         return $this->hasManyThrough(
         'App\Categoria',
-        'App\Detalle',
+        
         'App\SucursalDetalle',
        
         
-       // 'id_categoria',
+       'id_categoria',
         'id_categoria',
         'id_sucursal',
         

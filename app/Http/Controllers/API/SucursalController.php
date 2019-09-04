@@ -25,8 +25,16 @@ class SucursalController extends BaseController
       // DB::table('sucursal_detalle')->whereJsonContains('id_sucursaldetalle','=', 1)->join('detalles', 'detalles.id_detalle', '=', 'sucursal_detalle.id_detalle')->select('detalles.id_categoria')->get();
       // DB::table('sucursal_detalle')->whereJsonContains('id_sucursaldetalle','=', 1)->join('detalles', 'detalles.id_detalle', '=', 'sucursal_detalle.id_detalle')->join('categorias', 'detalles.id_categoria', '=', 'categorias.id_categoria');
       return $this->sendResponse($Suc->toArray(), 'Sucursales retrieved successfully.');
-     
+      Sucursal::with('categorias')->find(1);
 
+     //   return json_decode($Suc);
+    }
+    public function show2($id)
+    {
+         header("Access-Control-Allow-Origin: *");
+        $Suc= Sucursal::with('categorias')->find($id);
+      return $this->sendResponse($Suc->toArray(), 'Categorias por id Sucursal retrieved successfully.');
+     
      //   return json_decode($Suc);
     }
 
