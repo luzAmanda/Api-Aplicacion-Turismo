@@ -16,7 +16,7 @@ class Categoria extends Model
     public function detalles(){
         return $this->hasManyThrough(
         'App\Detalle',
-        'App\Sucursalcategoria',
+        'App\SucursalCategoria',
         'id_categoria',
         'id_sucursalcategoria',
         'id_categoria',
