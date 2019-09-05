@@ -6,20 +6,20 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\API\BaseController as BaseController;
 use App\Categoria;
 
-class CategoriaController extends BaseController
+class CategoriaDetalleController extends BaseController
 {
     
     public function index()
     {
       header("Access-Control-Allow-Origin: *");
-  $categorias=  Categoria::with('detalle','detallesSucursales')->get();
+  $categorias=  Categoria::with('detalles')->get();
 
-    return $this->sendResponse($categorias->toArray(), 'Categorias retrieved successfully.');
+    return $this->sendResponse($categorias->toArray(), 'Categoria detalles retrieved successfully.');
     }
 
     public function show($id)
     {
-  $categorias=  Categoria::with('detalles')->find($id);
+  $categorias=  Categoria::find($id);
 
     return $this->sendResponse($categorias->toArray(), 'Categorias retrieved successfully.');
     }

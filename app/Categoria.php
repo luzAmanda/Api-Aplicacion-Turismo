@@ -13,14 +13,14 @@ class Categoria extends Model
     public function detalle(){
         return $this->hasMany('App\Detalle','id_categoria');
     } 
-    public function detallesSucursales(){
-        return $this->hasOneThrough(
-        'App\SucursalDetalle',
+    public function detalles(){
+        return $this->hasManyThrough(
         'App\Detalle',
+        'App\Sucursalcategoria',
         'id_categoria',
-        'id_detalle',
+        'id_sucursalcategoria',
         'id_categoria',
-        'id_detalle'
+        'id_sucursalcategoria'
     );
     } 
 }

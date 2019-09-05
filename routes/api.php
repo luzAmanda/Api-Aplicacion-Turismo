@@ -26,7 +26,9 @@ Route::post('register', 'API\RegisterController@register');
     Route::get('categoriasporIdSucursal/{id}', 'API\SucursalController@show2');
     Route::get('categorias', 'API\TnegocioController@index');
     Route::get('sucursal-categorias/{id}', 'API\SucursalDetalleController@show');
-    Route::get('categoria/{id}', 'API\CategoriaController@show');
+    Route::get('detallesporIdCategoria/{id}', 'API\CategoriaController@show');
+  //  Route::get('detallesporIdCategoria/{id}', 'API\CategoriaDetalleController@show');
+ //   Route::get('detalleporIdCategoria/{id}', 'API\SucursalcategoriaController@show1');
     
 
 
