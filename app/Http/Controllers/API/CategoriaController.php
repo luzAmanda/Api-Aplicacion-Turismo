@@ -19,6 +19,7 @@ class CategoriaController extends BaseController
 
     public function show($id)
     {
+      header("Access-Control-Allow-Origin: *");
   $categorias=  Categoria::with('detalles')->find($id);
 
     return $this->sendResponse($categorias->toArray(), 'Categorias retrieved successfully.');
