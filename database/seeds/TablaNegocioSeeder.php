@@ -13,22 +13,22 @@ class TablaNegocioSeeder extends Seeder
     {
         DB::table('negocios')->insert([
             'id_tiponegocio' => 1,
-            'nombre'=>'Restaurate 1',
+            'nombre'=>'Restaurante la Florida',
             'descripcion'=> 'descripcion del Restaurante 1'
         ]);
         DB::table('negocios')->insert([
             'id_tiponegocio' => 1,
-            'nombre'=>'Restaurante 2',
+            'nombre'=>'Fu King Chinese restaurant',
             'descripcion'=> 'Restaurante 2'
         ]);
         DB::table('negocios')->insert([
-            'id_tiponegocio' => 2,
-            'nombre'=>'Cafetería 1',
+            'id_tiponegocio' => 1,
+            'nombre'=>'L’Arc Paris Restaurant',
             'descripcion'=> 'descripción de la Cafetería'
         ]);
         DB::table('negocios')->insert([
             'id_tiponegocio' => 2,
-            'nombre'=>'cafetería 2',
+            'nombre'=>'cafe estrella',
             'descripcion'=> 'descripción de la Cafetería'
         ]);
         DB::table('negocios')->insert([
