@@ -13,14 +13,14 @@ class TnegocioController extends BaseController
     public function index1()
 
     {
-
+header("Access-Control-Allow-Origin: *");
         $tNegocio = Tnegocio::all();
         return $this->sendResponse($tNegocio->toArray(), 'Tipos de negocios retrieved successfully.');
     }
     public function index2()
 
     {
-
+        header("Access-Control-Allow-Origin: *");
         $Negocios=Tnegocio::with('negocios')->get();
         return $this->sendResponse($Negocios->toArray(), 'Tipos de negocios retrieved successfully.');
     }
