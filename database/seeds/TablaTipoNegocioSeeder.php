@@ -28,5 +28,58 @@ class TablaTipoNegocioSeeder extends Seeder
             'nombre' => 'Hotel',
             'icono' => 'calculator', 
         ]);
+        DB::table('tipo_negocio')->insert([
+            'nombre' => 'Farmacia',
+            'icono' => 'thermometer', 
+        ]);
+        DB::table('tipo_negocio')->insert([
+            'nombre' => 'Peluquería',
+            'icono' => 'calculator', 
+        ]);
+
+        DB::table('tipo_negocio')->insert([
+            'nombre' => 'Veterinaria',
+            'icono' => 'paw', 
+        ]);
+        DB::table('tipo_negocio')->insert([
+            'nombre' => 'Bisutería',
+            'icono' => 'calculator', 
+        ]);
+        DB::table('tipo_negocio')->insert([
+            'nombre' => 'Pastelería',
+            'icono' => 'calculator', 
+        ]);
+
+        DB::table('tipo_negocio')->insert([
+            'nombre' => 'Heladería',
+            'icono' => 'calculator', 
+        ]);
+
+        DB::table('tipo_negocio')->insert([
+            'nombre' => 'Dulcería',
+            'icono' => 'calculator', 
+        ]);
+        DB::table('tipo_negocio')->insert([
+            'nombre' => 'Cosméticos',
+            'icono' => 'basket', 
+        ]);
+        DB::table('tipo_negocio')->insert([
+            'nombre' => 'Electrónica',
+            'icono' => 'calculator', 
+        ]);
+        DB::table('tipo_negocio')->insert([
+            'nombre' => 'Tintorería',
+            'icono' => 'calculator', 
+        ]);
+        DB::table('tipo_negocio')->insert([
+            'nombre' => 'Ropa',
+            'icono' => 'shirt', 
+        ]);
+        DB::table('tipo_negocio')->insert([
+            'nombre' => 'Lavadero de autos',
+            'icono' => 'calculator', 
+        ]);
+
+
     }
 }

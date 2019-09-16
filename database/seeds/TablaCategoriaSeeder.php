@@ -14,23 +14,34 @@ class TablaCategoriaSeeder extends Seeder
         //restaurante
         DB::table('categorias')->insert([
          
-            'nombre' => 'Platos',
-            'icono' => 'restaurant', 
+            'nombre' => 'Comida Mexicana',
+            'icono' => 'clipboard', 
         ]);
+
+
         DB::table('categorias')->insert([
          
-            'nombre' => 'Postres',
-            'icono' => 'cream', 
+            'nombre' => 'Platos fuertes',
+            'icono' => 'restaurant', 
         ]);
+
         DB::table('categorias')->insert([
           
             'nombre' => 'Desyunos',
-            'icono' => 'beer', 
+            'icono' => 'cafe', 
         ]);
+
+       
+        DB::table('categorias')->insert([
+         
+            'nombre' => 'Postres',
+            'icono' => 'ice-cream', 
+        ]);
+        
         DB::table('categorias')->insert([
             
             'nombre' => 'Bebidas',
-            'icono' => 'calculator', 
+            'icono' => 'wine', 
         ]);
 
         // CAFETERIA
@@ -47,17 +58,17 @@ class TablaCategoriaSeeder extends Seeder
         DB::table('categorias')->insert([
            
             'nombre' => 'Frappés',
-            'icono' => 'beer', 
+            'icono' => 'wine', 
         ]);
         DB::table('categorias')->insert([
            
             'nombre' => 'Smoothies',
-            'icono' => 'beer', 
+            'icono' => 'wine', 
         ]);
         DB::table('categorias')->insert([
            
             'nombre' => 'Malteadas',
-            'icono' => 'beer', 
+            'icono' => 'wine', 
         ]);
         DB::table('categorias')->insert([
           
@@ -67,8 +78,7 @@ class TablaCategoriaSeeder extends Seeder
         DB::table('categorias')->insert([
           
             'nombre' => 'Postres',
-            'icono' => 'cream', 
+            'icono' => 'ice-cream', 
         ]);
-     
     }
 }
