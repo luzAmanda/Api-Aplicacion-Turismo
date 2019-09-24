@@ -22,9 +22,10 @@ class CreateSucursalesTable extends Migration {
 			$table->text('direccion');
 			$table->float('longitud', 10, 0);
 			$table->float('latitud', 10, 0);
-			$table->integer('estado');
 			$table->text('foto')->nullable();
 			$table->text('tipo_foto')->nullable();
+			$table->integer('estado');
+			$table->timestamps();
 		});
 	}
 

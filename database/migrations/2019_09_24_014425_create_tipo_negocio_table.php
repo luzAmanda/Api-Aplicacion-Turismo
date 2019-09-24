@@ -15,9 +15,12 @@ class CreateTipoNegocioTable extends Migration {
 		Schema::create('tipo_negocio', function(Blueprint $table)
 		{
 			$table->integer('id_tiponegocio', true);
+			$table->integer('id_sector')->nullable();
 			$table->string('nombre', 100);
 			$table->text('descripcion')->nullable();
 			$table->string('icono', 20)->nullable();
+			$table->integer('estado')->nullable();
+			$table->timestamps();
 		});
 	}
 

@@ -22,6 +22,7 @@ class CreateDetallesTable extends Migration {
 			$table->text('tipo_foto')->nullable();
 			$table->float('precio', 10, 0)->nullable();
 			$table->integer('estado');
+			$table->timestamps();
 		});
 	}
 

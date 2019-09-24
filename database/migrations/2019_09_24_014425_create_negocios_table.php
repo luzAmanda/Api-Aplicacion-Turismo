@@ -18,6 +18,8 @@ class CreateNegociosTable extends Migration {
 			$table->integer('id_tiponegocio')->nullable();
 			$table->string('nombre', 100);
 			$table->text('descripcion')->nullable();
+			$table->integer('estado')->nullable();
+			$table->timestamps();
 		});
 	}
 

@@ -14,7 +14,7 @@ class AddForeignKeysToPropietariosTable extends Migration {
 	{
 		Schema::table('propietarios', function(Blueprint $table)
 		{
-			$table->foreign('id_usuario', 'fk_propieta_reference_usuarios')->references('id_usuario')->on('usuarios_cli')->onUpdate('RESTRICT')->onDelete('RESTRICT');
+			$table->foreign('id_usuario', 'fk_propieta_reference_usuarios')->references('id')->on('users')->onUpdate('RESTRICT')->onDelete('RESTRICT');
 		});
 	}
 
